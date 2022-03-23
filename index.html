@@ -5,71 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js" defer></script>
 </head>
 <body>
-    <hi>Rock Paper Scissors</hi>
-    <script>
+    <div class="heading">
+        <h1>Rock Paper Scissors</h1>
+    </div>
 
-    //ask user for their pick
-
-        for (let i=0; i<5; i++){    
-
-        var pick = window.prompt("What is your pick: Rock, Paper, or Scissors?".toLowerCase());
-        
-        let answerPlayer = pick.toLowerCase();
-
-
-    // player number to string
-
-        if(answerPlayer== "rock") {
-            answerPlayer = 1;
-        } else if(answerPlayer== "paper"){
-            answerPlayer = 2;
-        } else if(answerPlayer == "scissors"){
-            answerPlayer= 3;
-        }
-    
-        //computer randomly picks
-
-    function computerPlay(min,max){
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max-min +1)) + min;
-
-    }
-
-    let answerCPU= computerPlay(1,3);
-
-    
-    //decides which item is higher
-
-    function result(answerPlayer,answerCPU){
-        for (let i=0; i<5; i++){ 
-        }if (answerPlayer==1 && answerCPU==3){
-            return ("Winner!");
-        } else if (answerPlayer==3 && answerCPU==1){
-            return ("Loser");
-        } else if (answerPlayer>answerCPU) {
-            return ("Winner");
-        } else if(answerPlayer<answerCPU){
-            return ("Loser");
-        } else if(answerPlayer==answerCPU){
-            return ("Tie");
-        }
-    }
-
-    let winner=result(answerPlayer,answerCPU)
+<div class="boxes">    
+    <div class="button">
+        <div class="rock">
+        <input type="button" value="rock"></button>
+        </div>
+    </div>
 
 
+    <div class="button">
+        <div class="paper">
+        <input type="button" value="paper"></button>
+        </div>
+    </div>
 
-//loop for 5 rounds
 
-    //print result
+    <div class="button">
+        <div class="scissors">
+        <input type="button" value="scissors"></button>
+        </div>
+    </div>
+</div>
 
-   alert (winner)
-        }
-    //profit
-    </script>
-    
+<div class="score">
+    <div id="result"></div>
+</div>
+
+</div>
+
 </body>
 </html>

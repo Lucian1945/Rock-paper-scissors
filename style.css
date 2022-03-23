@@ -1,0 +1,63 @@
+.boxes{
+    border-radius: 100px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.button{
+    border:20px;
+    margin:30px;
+    padding:10px;
+    color:red;
+    text-align: center;
+    text-shadow: 1px;
+    font-size: 40px;
+    background-color: black;
+}
+
+.heading{
+    text-align: center;
+    font-size: large;
+    color: darkgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    border-color:black;
+    margin: 100px;
+}
+
+.rock{
+    background: url('./rock\(correct\).png')center;
+    height: 240px;
+    width: 240px;
+    object-fit: cover;
+}
+.paper{
+    background: url('./papertry.png')center;
+    height: 240px;
+    width: 240px;
+    object-fit: cover;
+}
+.scissors{
+    background: url('./scissors2.jpg')center;
+    height: 240px;
+    width: 240px;
+    object-fit: cover;
+}
+.score{
+    display:flex;
+    font:bolder;
+    font-size: larger;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.border{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
